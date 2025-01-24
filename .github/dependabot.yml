@@ -4,11 +4,11 @@ updates:
     directory: /                       # パッケージマニフェストの配置先ディレクトリ
     schedule:
       interval: daily
-    ignore:
-      - dependency-name: actions/upload-artifact
-        versions:
-          - 4.3.0
-          - 4.3.1
-      - dependency-name: 'actions/*'
-        updates-types:
-          - version-update:semver-major
+    # ignore:  # バージョンアップの除外設定
+    #   - dependency-name: actions/upload-artifact
+    #     versions:
+    #       - 4.3.0
+    #       - 4.3.1
+    #   - dependency-name: 'actions/*'
+    #     updates-types:
+    #       - version-update:semver-major
